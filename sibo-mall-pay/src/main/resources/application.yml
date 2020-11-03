@@ -1,0 +1,15 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: sibo-mall-pay
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sibo-mall?useUnicode=true&characterEncodingutf-8&useSSL=false
+    username: root
+    password: 123456
+
+mybatis:
+  mapper-locations: classpath:cn/ouyangfan/mall/sibo/pay/mapper/*.xml
+  type-aliases-package: cn.ouyangfan.mall.sibo.pay.entities

@@ -1,0 +1,19 @@
+
+-- 支付信息表
+drop table if exists `payment_info`;
+CREATE TABLE `payment_info`  (
+  `id` bigint(20) NOT NULL COMMENT '主键',
+  `order_no` varchar(50) NOT NULL COMMENT '订单编号',
+  `system_payment_no` varchar(50) NOT NULL COMMENT '系统支付编号',
+  `third_payment_no` varchar(50) NOT NULL COMMENT '第三方支付编号',
+  `payment_type` tinyint(1) NOT NULL COMMENT '支付类型',
+  `payment_status` tinyint(1) NOT NULL COMMENT '支付状态',
+  `payment_amount` decimal(13, 2) NOT NULL COMMENT '支付金额',
+  `payment_fail_season` varchar(255) NOT NULL COMMENT '支付失败原因',
+  `attach_info` varchar(255) NULL COMMENT '附加信息',
+  `creater` bigint(20) NOT NULL COMMENT '创建人',
+  `create_date` bigint(13) NOT NULL COMMENT '创建时间',
+  `modified_by` bigint(20) NOT NULL COMMENT '修改人',
+  `modify_date` bigint(13) NOT NULL COMMENT '修改时间',
+  PRIMARY KEY (`id`)
+);

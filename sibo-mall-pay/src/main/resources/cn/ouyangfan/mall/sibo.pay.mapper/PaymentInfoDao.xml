@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ouyangfan.mall.sibo.pay.dao.PaymentInfoDao">
+
+    <resultMap id="BaseResultMap" type="cn.ouyangfan.mall.sibo.pay.entities.PaymentInfo">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="creater" property="creater" jdbcType="BIGINT"/>
+        <result column="create_date" property="createDate" jdbcType="BIGINT"/>
+        <result column="modified_by" property="modifiedBy" jdbcType="BIGINT"/>
+        <result column="modified_date" property="modifyDate" jdbcType="BIGINT"/>
+        <result column="order_no" property="orderNo" jdbcType="VARCHAR"/>
+        <result column="system_payment_no" property="systemPaymentNo" jdbcType="VARCHAR"/>
+        <result column="third_payment_no" property="thirdPaymentNo" jdbcType="VARCHAR"/>
+        <result column="payment_amount" property="paymentAmount" jdbcType="DECIMAL"/>
+        <result column="payment_type" property="paymentType" jdbcType="BIGINT"/>
+        <result column="payment_status" property="paymentStatus" jdbcType="BIGINT"/>
+        <result column="payment_fail_season" property="paymentFailSeason" jdbcType="VARCHAR"/>
+        <result column="attach_info" property="attachInfo" jdbcType="VARCHAR"/>
+
+    </resultMap>
+    <insert id="createPay" parameterType="cn.ouyangfan.mall.sibo.pay.entities.PaymentInfo" useGeneratedKeys="true"
+            keyProperty="id">
+
+
+    </insert>
+</mapper>
