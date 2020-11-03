@@ -6,7 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="sibo-mall" />
+        <module name="sibo-mall-goods" />
+        <module name="sibo-mall-picture" />
+        <module name="sibo-mall-registry" />
+        <module name="sibo-mall-core" />
+        <module name="sibo-mall-basedata" />
+        <module name="sibo-mall-order" />
+        <module name="sibo-mall-auth" />
+        <module name="sibo-mall-gateway" />
+        <module name="sibo-mall-pay" />
+        <module name="sibo-mall-config" />
       </profile>
     </annotationProcessing>
   </component>
