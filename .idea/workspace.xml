@@ -22,16 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ac7ff87-f27b-4233-bc55-7733f1a118e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sibo-mall-auth/src/main/java/cn/ouyangfan/mall/sibo/auth/config/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sibo-mall-auth/src/main/java/cn/ouyangfan/mall/sibo/auth/config/SiboAuthServerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sibo-mall-auth/src/main/java/cn/ouyangfan/mall/sibo/starter/AuthStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sibo-mall-auth/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sibo-mall-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sibo-mall-auth/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sibo-mall-registry/sibo-mall-registry.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sibo-mall-registry/sibo-mall-registry.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sibo-mall.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sibo-mall.iml" afterDir="false" />
-    </list>
+    <list default="true" id="2ac7ff87-f27b-4233-bc55-7733f1a118e8" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +63,17 @@
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="sibo-mall-pay" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ouyangfan.mall.sibo.starter.PayApplication" />
@@ -93,6 +95,7 @@
       <workItem from="1604459762907" duration="1222000" />
       <workItem from="1604461288163" duration="3197000" />
       <workItem from="1604479630121" duration="65000" />
+      <workItem from="1604480805967" duration="11000" />
     </task>
     <servers />
   </component>
