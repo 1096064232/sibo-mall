@@ -7,16 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sibo-mall-goods" />
-        <module name="sibo-mall-picture" />
-        <module name="sibo-mall-registry" />
         <module name="sibo-mall-core" />
-        <module name="sibo-mall-basedata" />
         <module name="sibo-mall-order" />
-        <module name="sibo-mall-auth" />
+        <module name="sibo-mall-security" />
+        <module name="sibo-mall-register" />
         <module name="sibo-mall-gateway" />
-        <module name="sibo-mall-pay" />
-        <module name="sibo-mall-config" />
+        <module name="sibo-mall-admin" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sibo-mall-auth" target="1.8" />
+      <module name="sibo-mall-basedata" target="1.8" />
+      <module name="sibo-mall-config" target="1.8" />
+      <module name="sibo-mall-pay" target="1.8" />
+      <module name="sibo-mall-picture" target="1.8" />
+      <module name="sibo-mall-registry" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
