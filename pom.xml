@@ -9,19 +9,6 @@
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <modules>
-        <module>sibo-mall-registry</module>
-        <module>sibo-mall-auth</module>
-        <module>sibo-mall-order</module>
-        <module>sibo-mall-core</module>
-        <module>sibo-mall-gateway</module>
-        <module>sibo-mall-goods</module>
-        <module>sibo-mall-config</module>
-        <module>sibo-mall-pay</module>
-        <module>sibo-mall-basedata</module>
-        <module>sibo-mall-picture</module>
-    </modules>
-
     <properties>
         <project.version>1.0.0-SNAPSHOT</project.version>
         <java.version>1.8</java.version>
@@ -84,7 +71,6 @@
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
-
         </dependencies>
     </dependencyManagement>
 
