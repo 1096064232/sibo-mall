@@ -22,18 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ac7ff87-f27b-4233-bc55-7733f1a118e8" name="Default Changelist" comment="修改pom">
-      <change afterPath="$PROJECT_DIR$/sibo-mall-admin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sibo-mall-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sibo-mall-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sibo-mall-goods/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sibo-mall-order/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sibo-mall-register/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sibo-mall-register/sibo-mall-register.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sibo-mall-security/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="2ac7ff87-f27b-4233-bc55-7733f1a118e8" name="Default Changelist" comment="创建model">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-core/src/main/java/cn/oyangfan/mall/sibo/core/GlobalExceptionHandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-core/src/main/java/cn/oyangfan/mall/sibo/core/vo/BaseForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-core/src/main/java/cn/oyangfan/mall/sibo/core/vo/ResultVo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sibo-mall-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sibo-mall-core/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +56,15 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\java\maven_repository" />
-        <option name="mavenHome" value="D:\software\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="D:\java\maven-3.6.3" />
         <option name="userSettingsFile" value="D:\java\maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="1jlsFVbaBVzc4Ca3XsytEHqAhE8" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -79,16 +78,18 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,7 +116,8 @@
       <workItem from="1604461288163" duration="3197000" />
       <workItem from="1604479630121" duration="65000" />
       <workItem from="1604480805967" duration="11000" />
-      <workItem from="1605833386683" duration="2057000" />
+      <workItem from="1605833386683" duration="2182000" />
+      <workItem from="1605851337546" duration="2710000" />
     </task>
     <task id="LOCAL-00001" summary="修改pom">
       <created>1605834039139</created>
@@ -124,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605834039139</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="创建model">
+      <created>1605835973208</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605835973208</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,9 +153,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改pom" />
+    <MESSAGE value="创建model" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建model" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="514" y="239" key="#Custom_Plugin_Repositories" timestamp="1605851426729">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="514" y="239" key="#Custom_Plugin_Repositories/0.0.1280.680@0.0.1280.680" timestamp="1605851426729" />
+    <state x="413" y="57" key="#HTTP_Proxy" timestamp="1605851435382">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="413" y="57" key="#HTTP_Proxy/0.0.1280.680@0.0.1280.680" timestamp="1605851435382" />
     <state x="121" y="0" key="#Project_Structure" timestamp="1604452971995">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -155,18 +173,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="260" y="18" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1280.680@0.0.1280.680" timestamp="1605835837541" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1604461296213">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1605852473877">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1604461296213" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1604389997852">
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1605852473877" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1605852477346">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1604389997852" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1605834054785">
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1605852477346" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1605835986709">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1605834054785" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1605835986709" />
     <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605835172466">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
