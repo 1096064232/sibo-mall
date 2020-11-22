@@ -22,11 +22,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ac7ff87-f27b-4233-bc55-7733f1a118e8" name="Default Changelist" comment="添加依赖">
-      <change afterPath="$PROJECT_DIR$/sibo-mall-core/src/main/resources/logback-spring.xml" afterDir="false" />
+    <list default="true" id="2ac7ff87-f27b-4233-bc55-7733f1a118e8" name="Default Changelist" comment="将token改为jwt">
+      <change afterPath="$PROJECT_DIR$/sibo-mall-admin/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-admin/target/classes/cn/ouyangfan/mall/sibo/starter/AdminStarter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-admin/target/classes/cn/ouyangfan/mall/sibo/starter/TokenInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-admin/target/classes/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-core/target/classes/cn/oyangfan/mall/sibo/core/GlobalExceptionHandling.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-core/target/classes/cn/oyangfan/mall/sibo/core/vo/BaseForm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-core/target/classes/cn/oyangfan/mall/sibo/core/vo/ResultVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-gateway/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-gateway/target/classes/cn/ouyangfan/mall/sibo/gateway/GateSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-gateway/target/classes/cn/ouyangfan/mall/sibo/starter/GatewayStarter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-security/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-security/target/classes/cn/ouyangfan/mall/sibo/security/server/AuthorizationServerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-security/target/classes/cn/ouyangfan/mall/sibo/security/server/OAuth2LogoutSuccessHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-security/target/classes/cn/ouyangfan/mall/sibo/security/server/UserDetailsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-security/target/classes/cn/ouyangfan/mall/sibo/security/server/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-security/target/classes/cn/ouyangfan/mall/sibo/starter/SecurityStarter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sibo-mall-security/target/classes/sibo.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sibo-mall-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sibo-mall-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sibo-mall-register/sibo-mall-register.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sibo-mall.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +53,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -52,9 +70,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\java\maven_repository" />
-        <option name="mavenHome" value="D:\java\maven-3.6.3" />
-        <option name="userSettingsFile" value="D:\java\maven-3.6.3\conf\settings.xml" />
+        <option name="localRepository" value="D:\maven_repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../software/apache-maven-3.5.3" />
+        <option name="userSettingsFile" value="D:\software\apache-maven-3.5.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -67,26 +85,68 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/sibo-mall-security/src/main/java/cn/ouyangfan/mall/sibo" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\sibo-mall\sibo-mall" />
+      <recent name="D:\WorkSpace\sibo-mall\sibo-mall\sibo-mall-security\src\main\resources" />
+      <recent name="D:\WorkSpace\sibo-mall\sibo-mall\db" />
+      <recent name="D:\WorkSpace\sibo-mall\sibo-mall\sibo-mall-admin\src\main\resources" />
+      <recent name="D:\WorkSpace\sibo-mall\sibo-mall\sibo-mall-admin\src\main\java\cn\ouyangfan\mall\sibo\starter" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatewayStarter">
+    <configuration name="GlobalExceptionHandling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.oyangfan.mall.sibo.core.GlobalExceptionHandling" />
+      <module name="sibo-mall-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.oyangfan.mall.sibo.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AdminStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="sibo-mall-admin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ouyangfan.mall.sibo.starter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ouyangfan.mall.sibo.starter.AdminStarter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="sibo-mall-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ouyangfan.mall.sibo.starter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ouyangfan.mall.sibo.starter.GatewayStarter" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,8 +158,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SecurityStarter (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="sibo-mall-security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ouyangfan.mall.sibo.starter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ouyangfan.mall.sibo.starter.SecurityStarter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SecurityStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="sibo-mall-security" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.ouyangfan.mall.sibo.security.starter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.ouyangfan.mall.sibo.security.starter.SecurityStarter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GatewayStarter" />
+        <item itemvalue="Spring Boot.AdminStarter" />
+        <item itemvalue="Spring Boot.SecurityStarter (1)" />
+        <item itemvalue="Spring Boot.SecurityStarter" />
+        <item itemvalue="Application.GlobalExceptionHandling" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="2ac7ff87-f27b-4233-bc55-7733f1a118e8" name="Default Changelist" comment="" />
@@ -115,6 +213,8 @@
       <workItem from="1604480805967" duration="11000" />
       <workItem from="1605833386683" duration="2182000" />
       <workItem from="1605851337546" duration="7077000" />
+      <workItem from="1605977138439" duration="12012000" />
+      <workItem from="1606030419049" duration="2398000" />
     </task>
     <task id="LOCAL-00001" summary="修改pom">
       <created>1605834039139</created>
@@ -144,11 +244,18 @@
       <option name="project" value="LOCAL" />
       <updated>1605881185747</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="将token改为jwt">
+      <created>1606032800600</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606032800600</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -167,7 +274,8 @@
     <MESSAGE value="创建model" />
     <MESSAGE value="编写core内容" />
     <MESSAGE value="添加依赖" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加依赖" />
+    <MESSAGE value="将token改为jwt" />
+    <option name="LAST_COMMIT_MESSAGE" value="将token改为jwt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="514" y="239" key="#Custom_Plugin_Repositories" timestamp="1605851426729">
@@ -178,26 +286,95 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="413" y="57" key="#HTTP_Proxy/0.0.1280.680@0.0.1280.680" timestamp="1605851435382" />
-    <state x="121" y="0" key="#Project_Structure" timestamp="1604452971995">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="145" y="0" key="#Project_Structure" timestamp="1605977988740">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1604452971995" />
-    <state x="260" y="18" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1605835837541">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="145" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605977988740" />
+    <state x="511" y="212" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606027704127">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="212" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1606027704127" />
+    <state x="574" y="117" width="702" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1606028826461">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="117" width="702" height="589" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606028826461" />
+    <state x="312" y="22" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1605977531142">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="260" y="18" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1280.680@0.0.1280.680" timestamp="1605835837541" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1605852473877">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="312" y="22" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1605977531142" />
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606027406470">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1606027406470" />
+    <state x="505" y="115" key="FileChooserDialogImpl" timestamp="1605977875298">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1605852473877" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1605852477346">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="505" y="115" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605977875298" />
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1606032484313">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606032484313" />
+    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1606032484313">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606032484313" />
+    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1606032484313">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606032484313" />
+    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1606032484313">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606032484313" />
+    <state width="1493" height="2" key="GridCell.Tab.1.bottom" timestamp="1606032484314">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606032484314" />
+    <state width="1493" height="2" key="GridCell.Tab.1.center" timestamp="1606032484313">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606032484313" />
+    <state width="1493" height="2" key="GridCell.Tab.1.left" timestamp="1606032484313">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606032484313" />
+    <state width="1493" height="2" key="GridCell.Tab.1.right" timestamp="1606032484314">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="2" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606032484314" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1606030036407">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606030036407" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1606030036406">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1606030036406" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1606030036406">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1606030036406" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1606030036407">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1606030036407" />
+    <state x="190" y="78" key="SettingsEditor" timestamp="1605977881834">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1605852477346" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1605881196340">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="190" y="78" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605977881834" />
+    <state x="280" y="88" key="Vcs.Push.Dialog.v2" timestamp="1606032834428">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1605881196340" />
+    <state x="280" y="88" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606032834428" />
+    <state x="565" y="189" key="chooseDestDirectoryDialog" timestamp="1606028034634">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="565" y="189" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606028034634" />
     <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605835172466">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -206,5 +383,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="56" y="141" width="1224" height="474" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1605835894832" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605978316358">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605978316358" />
   </component>
 </project>
