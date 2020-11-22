@@ -12,18 +12,11 @@ public class GatewayStarter {
 
     public static void main(String[] args) {
         SpringApplication.run(GatewayStarter.class, args);
-        System.out.println("===========系统启动完成================");
-    }
-
-    @GetMapping("/test/12")
-    public Object hi() {
-        return "adsadad";
     }
 
     @GetMapping("/me")
     public Object user() {
         return SecurityContextHolder.getContext().getAuthentication();
     }
-
 
 }
