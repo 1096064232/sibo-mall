@@ -12,3 +12,6 @@
     服务总线： nacos和Bus(停更) 
    
 
+
+生成key：
+ keytool -genkeypair -alias sibo -keyalg RSA -keypass 123456  -storepass 123456 -keystore D:\WorkSpace\sibo-mall\sibo-mall\key\sibo.key 

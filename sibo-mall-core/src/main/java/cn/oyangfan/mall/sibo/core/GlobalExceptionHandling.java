@@ -1,5 +1,6 @@
 package cn.oyangfan.mall.sibo.core;
 
+import cn.hutool.core.util.IdUtil;
 import cn.oyangfan.mall.sibo.core.vo.ResultVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -25,5 +26,10 @@ public class GlobalExceptionHandling {
     public ResultVo exception(Exception e) {
         e.printStackTrace();
         return ResultVo.create(HttpStatus.INTERNAL_SERVER_ERROR.value(), e.getMessage(), null);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(IdUtil.simpleUUID());
+
     }
 }

@@ -7,12 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="sibo-mall-goods" />
+        <module name="sibo-mall-register" />
+        <module name="sibo-mall-admin" />
         <module name="sibo-mall-core" />
         <module name="sibo-mall-order" />
         <module name="sibo-mall-security" />
-        <module name="sibo-mall-register" />
         <module name="sibo-mall-gateway" />
-        <module name="sibo-mall-admin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

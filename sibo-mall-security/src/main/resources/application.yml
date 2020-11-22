@@ -1,0 +1,11 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: sibo-mall-security
+  datasource:
+    driver-class-name:
+    url: jdbc:mysql://localhost:3306/sibo-mall?useUnicode=true&useSSL=true&autoReconnect=true&failOverReadOnly=false&characterEncoding=gbk
+    username: root
+    password: 123456
+
