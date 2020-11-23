@@ -24,3 +24,13 @@ security:
       jwt:
         # 项目启动时从认证服务器获取签名的key
         key-uri: http://127.0.0.1:9999/oauth/token_key
+eureka:
+  client:
+    #从eureka服务器获取注册表信息的频率（s） 30
+    registry-fetch-interval-seconds: 5
+    #更新实例信息的变化到Eureka服务端的间隔时间，（s） 30
+    instance-info-replication-interval-seconds: 5
+    #询问Eureka Server信息变化的时间间隔（s），默认为300秒
+    eureka-service-url-poll-interval-seconds: 5
+    service-url:
+      defaultZone: http://127.0.0.1:9001/eureka/
