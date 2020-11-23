@@ -2,8 +2,9 @@ package cn.ouyangfan.mall.sibo.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-
+@EnableDiscoveryClient
 @SpringBootApplication(scanBasePackages = {"cn.ouyangfan.mall.sibo"})
 public class SecurityStarter {
 
