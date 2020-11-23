@@ -1,0 +1,20 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: sibo-mall-register
+eureka:
+  instance:
+    appname: localhsot
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://${eureka.instance.appname}:${server.port}/eureka/
+  server:
+    #启用自我保护机制，默认为true
+    enable-self-preservation: false
+    #清除无效服务实例的时间间隔（ms），默认1分钟 60000
+    eviction-interval-timer-in-ms: 5000
+    # 清理无效增量信息的时间间隔（ms），默认30秒
+    delta-retention-timer-interval-in-ms: 5000
