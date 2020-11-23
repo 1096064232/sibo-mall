@@ -1,7 +1,7 @@
 /**
  * 
  */
-package cn.ouyangfan.mall.sibo.starter;
+package cn.ouyangfan.mall.sibo.admin;
 
 import java.time.LocalDateTime;
 
