@@ -4,14 +4,19 @@
 
 三、技术选型
     
-    注册中心： nacos和eureka(停更)
-    服务调用： openFeign和Feign(停更)
-    服务降级： sentienl和Hystrix(停更)
-    服务网关： gateway和zuul(停更)
-    服务配置： nacos和config(停更)
-    服务总线： nacos和Bus(停更) 
-   
+    注册中心： eureka
+    服务调用： openFeign
+    服务降级： Hystrix
+    服务网关： zuul
+    服务配置： config
+    服务总线： Bus 
+    权限管理： oauth2、security
 
 
 生成key：
  keytool -genkeypair -alias sibo -keyalg RSA -keypass 123456  -storepass 123456 -keystore D:\WorkSpace\sibo-mall\sibo-mall\key\sibo.key 
+ 
+ 127.0.0.1  admin.ouyangfan.cn
+ 127.0.0.1  sso.ouyangfan.cn
+ 127.0.0.1  sibo.ouyangfan.cn
+ 
