@@ -43,9 +43,14 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
+                .antMatchers("/css/**","/img/**","/js/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
-                .formLogin().and()
+                .formLogin()
+                .loginPage("/sso-login.html")
+                .loginProcessingUrl("/sso_authentication")
+                .permitAll()
+                .and()
                 .httpBasic().and()
                 .logout()
                 .logoutSuccessHandler(logoutSuccessHandler);
