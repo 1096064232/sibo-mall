@@ -27,4 +27,11 @@ security:
     resource:
       jwt:
         # 项目启动时从认证服务器获取签名的key
-        key-uri: http://127.0.0.1:9999/oauth/token_key
+        key-uri: http://sibo.ouyangfan.cn:7003/sso/oauth/token_key
+sso:
+  token:
+    #获取token的地址
+    url: http://sibo.ouyangfan.cn:7003/sso/oauth/token
+  callback:
+    #admin的回调函数地址
+    url: http://sibo.ouyangfan.cn:7003/admin/oauth/callback

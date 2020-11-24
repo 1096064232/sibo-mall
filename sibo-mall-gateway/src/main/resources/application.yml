@@ -8,6 +8,9 @@ zuul:
     admin:
       path: /admin/**
       serviceId: SIBO-MALL-ADMIN
+    sso:
+      path: /sso/**
+      serviceId: SIBO-MALL-SECURITY
   sensitive-headers:
 security:
   oauth2:
@@ -18,7 +21,7 @@ security:
     resource:
       jwt:
         # 项目启动时从认证服务器获取签名的key
-        key-uri: http://127.0.0.1:9999/oauth/token_key
+        key-uri: http://sso.ouyangfan.cn:9999/oauth/token_key
 eureka:
   client:
     #从eureka服务器获取注册表信息的频率（s） 30
