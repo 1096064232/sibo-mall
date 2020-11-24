@@ -15,8 +15,8 @@ create table oauth_client_details (
 insert into oauth_client_details (
 client_id,client_secret, resource_ids, scope, authorized_grant_types, web_server_redirect_uri,
 authorities, access_token_validity, refresh_token_validity, additional_information, autoapprove)
-values('04e6337ae6c7435d8b2eda995878fe0e','$2a$10$Nw/B4/m9kuxA6uYjK6bNtecKXh3IgW1lWRRvUn74zKJseV4dHydsq','admin,gateway,goods,order','admin','authorization_code','http://admin.ouyangfan.cn:9090/oauth/callback',
-null,60,129600,null,'true')
+values('04e6337ae6c7435d8b2eda995878fe0e','$2a$10$Nw/B4/m9kuxA6uYjK6bNtecKXh3IgW1lWRRvUn74zKJseV4dHydsq','admin,gateway,goods,order','admin','authorization_code','http://sibo.ouyangfan.cn:7003/admin/oauth/callback',
+null,60,129600,null,'true');
 
 
 
