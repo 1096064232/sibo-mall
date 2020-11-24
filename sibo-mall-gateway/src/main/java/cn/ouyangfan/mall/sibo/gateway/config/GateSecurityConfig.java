@@ -23,7 +23,9 @@ public class GateSecurityConfig extends ResourceServerConfigurerAdapter {
                 .antMatchers("/admin/index.html",
                         "/admin/oauth/callback",
                         "/sso/oauth/token_key",
-                        "/sso/oauth/token"
+                        "/sso/oauth/token",
+                        "/sso/oauth/authorize",
+                        "/sso/admin_login"
                         )
                 .permitAll()
                 .anyRequest()

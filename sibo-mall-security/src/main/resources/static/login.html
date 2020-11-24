@@ -2,29 +2,31 @@
 <html>
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
 <meta charset="utf-8" />
 <title>登录</title>
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 </head>
 
 <body>
-
 <img class="bgone" src="img/1.jpg" />
 <img class="pic" src="img/a.png" />
-
 <div class="table">
+	<form method="post" action="/login">
 	<div class="wel">思博在线商城系统</div>
 	<div class="wel1">SIBO ONLINE MALL SYSTEM</div>
 	<div class="user">
 		<div class="yonghu" style=""><img src="img/yhm.png" /></div>
-		<input type="text" name="" placeholder="请输入用户名" />
+		<input type="text" name="username" placeholder="请输入用户名" />
 	</div>			
 	<div class="password">
 		<div class="yonghu"><img src="img/mm.png" /></div>
-		<input type="password" name="密码" placeholder="请输入密码"/>
+		<input type="password" name="password" placeholder="请输入密码"/>
 	</div>
-	<input class="btn" type="button" name="登录" value="登录" />
+	<input class="btn" type="submit" value="登录" />
+	</form>
 </div>
-
 </body>
 </html>

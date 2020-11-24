@@ -3,6 +3,7 @@ package cn.ouyangfan.mall.sibo.security.server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -43,16 +44,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/css/**","/img/**","/js/**").permitAll()
+                .antMatchers("/css/**", "/img/**", "/js/**","/login.html").permitAll()
+//                .antMatchers(HttpMethod.POST,"/admin_login").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .formLogin()
-                .loginPage("/sso-login.html")
-                .loginProcessingUrl("/sso_authentication")
-                .permitAll()
+                .loginPage("/login.html")
+//                .loginProcessingUrl("/admin_login")
+//                .permitAll()
                 .and()
                 .httpBasic().and()
                 .logout()
-                .logoutSuccessHandler(logoutSuccessHandler);
+                .logoutSuccessHandler(logoutSuccessHandler)
+                .and()
+                .csrf().disable();
     }
 }
