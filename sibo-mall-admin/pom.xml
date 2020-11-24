@@ -10,13 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>sibo-mall-admin</artifactId>
-
-    <dependencies>
-        <dependency>
-            <groupId>cn.ouyangfan.mall.sibo</groupId>
-            <artifactId>sibo-mall-gateway</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-    </dependencies>
+   <dependencies>
+       <dependency>
+           <groupId>cn.ouyangfan.mall.sibo</groupId>
+           <artifactId>sibo-mall-core</artifactId>
+           <version>${project.version}</version>
+       </dependency>
+   </dependencies>
 
 </project>

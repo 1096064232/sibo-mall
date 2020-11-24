@@ -18,3 +18,13 @@ eureka:
     eureka-service-url-poll-interval-seconds: 5
     service-url:
       defaultZone: http://127.0.0.1:9001/eureka/
+security:
+  oauth2:
+    client:
+      # 项目启动时从认证服务器获取签名的key时需要用到的签名信息
+      client-id: 04e6337ae6c7435d8b2eda995878fe0e
+      client-secret: 04e6337ae6c7435d8b2eda995878fe0e
+    resource:
+      jwt:
+        # 项目启动时从认证服务器获取签名的key
+        key-uri: http://127.0.0.1:9999/oauth/token_key
