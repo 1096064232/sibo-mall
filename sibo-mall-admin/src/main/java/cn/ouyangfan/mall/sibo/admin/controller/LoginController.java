@@ -5,7 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.*;
-import org.springframework.security.core.context.SecurityContextHolder;
+//import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,20 +21,40 @@ import java.io.IOException;
 @RestController
 public class LoginController {
 
+
+    @Value("${sso.token-url}")
+    private String oauthServiceUrl;
+
     /**
      *  获取token的地址
      */
-    @Value("${sso.token.url}")
-    private String oauthServiceUrl;
+    @Value("${sso.authorize-url}")
+    private String authorizeUrl;
 
     /**
      *  admin的回调函数地址
      */
-    @Value("${sso.callback.url}")
+    @Value("${sso.callback-url}")
     private String callbackUrl;
+
+    @Value("${sso.client-id}")
+    private String clientId;
+
+    @Value("${sso.scope}")
+    private String scope;
 
 
     private RestTemplate restTemplate = new RestTemplate();
+
+
+    @GetMapping("/admin/login")
+    public void adminSSO(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        StringBuffer ssoUrl = new StringBuffer(authorizeUrl+"?response_type=code");
+        ssoUrl.append("&client_id="+clientId)
+                .append("&scope="+scope)
+                .append("&redirect_uri="+callbackUrl);
+        response.sendRedirect(ssoUrl.toString());
+    }
 
     @GetMapping("/oauth/callback")
     public void callback(@RequestParam(required = false) String code, String state, HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -55,7 +75,8 @@ public class LoginController {
 
     @GetMapping("/me")
     public Object getCurrentUser() {
-        return SecurityContextHolder.getContext().getAuthentication();
+//        return SecurityContextHolder.getContext().getAuthentication();
+        return null;
     }
 
 

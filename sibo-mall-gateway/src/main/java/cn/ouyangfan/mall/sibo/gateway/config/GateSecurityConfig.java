@@ -24,8 +24,7 @@ public class GateSecurityConfig extends ResourceServerConfigurerAdapter {
                         "/admin/oauth/callback",
                         "/sso/oauth/token_key",
                         "/sso/oauth/token",
-                        "/sso/oauth/authorize",
-                        "/sso/admin_login"
+                        "/sso/oauth/authorize"
                         )
                 .permitAll()
                 .anyRequest()

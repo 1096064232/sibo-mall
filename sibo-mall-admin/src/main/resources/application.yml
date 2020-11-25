@@ -8,30 +8,37 @@ spring:
     url: jdbc:mysql://localhost:3306/sibo-mall?useUnicode=true&useSSL=true&autoReconnect=true&failOverReadOnly=false&characterEncoding=gbk
     username: root
     password: 123456
-eureka:
-  client:
-    #从eureka服务器获取注册表信息的频率（s） 30
-    registry-fetch-interval-seconds: 5
-    #更新实例信息的变化到Eureka服务端的间隔时间，（s） 30
-    instance-info-replication-interval-seconds: 5
-    #询问Eureka Server信息变化的时间间隔（s），默认为300秒
-    eureka-service-url-poll-interval-seconds: 5
-    service-url:
-      defaultZone: http://127.0.0.1:9001/eureka/
-security:
-  oauth2:
-    client:
-      # 项目启动时从认证服务器获取签名的key时需要用到的签名信息
-      client-id: 04e6337ae6c7435d8b2eda995878fe0e
-      client-secret: 04e6337ae6c7435d8b2eda995878fe0e
-    resource:
-      jwt:
-        # 项目启动时从认证服务器获取签名的key
-        key-uri: http://sibo.ouyangfan.cn:7003/sso/oauth/token_key
+#eureka:
+#  client:
+#    #从eureka服务器获取注册表信息的频率（s） 30
+#    registry-fetch-interval-seconds: 5
+#    #更新实例信息的变化到Eureka服务端的间隔时间，（s） 30
+#    instance-info-replication-interval-seconds: 5
+#    #询问Eureka Server信息变化的时间间隔（s），默认为300秒
+#    eureka-service-url-poll-interval-seconds: 5
+#    service-url:
+#      defaultZone: http://127.0.0.1:9001/eureka/
+#security:
+#  oauth2:
+#    client:
+#      # 项目启动时从认证服务器获取签名的key时需要用到的签名信息
+#      client-id: 04e6337ae6c7435d8b2eda995878fe0e
+#      client-secret: 04e6337ae6c7435d8b2eda995878fe0e
+#    resource:
+#      jwt:
+#        # 项目启动时从认证服务器获取签名的key
+#        key-uri: http://sibo.ouyangfan.cn:7003/sso/oauth/token_key
 sso:
-  token:
-    #获取token的地址
-    url: http://sibo.ouyangfan.cn:7003/sso/oauth/token
-  callback:
-    #admin的回调函数地址
-    url: http://sibo.ouyangfan.cn:7003/admin/oauth/callback
+  #获取授权码的地址
+  authorize-url: http://sso.ouyangfan.cn:9999/oauth/authorize
+  #获取token的地址
+  token-url: http://sso.ouyangfan.cn:9999/oauth/token
+  #admin的回调函数地址
+  callback-url: http://admin.ouyangfan.cn:9090/oauth/callback
+  #clientId
+  client-id: 04e6337ae6c7435d8b2eda995878fe0e
+  #clientSecret
+  client-secret: 04e6337ae6c7435d8b2eda995878fe0e
+  scope: admin
+
+
